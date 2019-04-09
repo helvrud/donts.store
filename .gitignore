@@ -1,0 +1,6 @@
+donts.store/venv/*
+donts.store/django-shop/*
+*.pyc
+*filer_public_thumbnails/*
+*__pycache__*
+workdir/static/*
