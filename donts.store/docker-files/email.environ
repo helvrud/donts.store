@@ -1,0 +1,7 @@
+DJANGO_EMAIL_HOST = 'smtp.yandex.ru'
+DJANGO_EMAIL_PORT = 587
+DJANGO_EMAIL_USER = 'sales@donts.store'
+DJANGO_EMAIL_PASSWORD = 'Mas_tq12'
+DJANGO_EMAIL_USE_TLS = True
+DJANGO_EMAIL_FROM = 'sales@donts.store'
+DJANGO_EMAIL_REPLY_TO = 'sales@donts.store'

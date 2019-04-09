@@ -1,0 +1,12 @@
+{% comment %}
+<button type="submit" {% if instance.custom_classes %} class="{{ instance.custom_classes}}"{% endif %}>
+    {{ instance.label }}
+</button>
+{% endcomment %}
+<br>
+<div id="success"></div>
+<div class="row">
+    <div class="form-group col-12">
+        <button type="submit" class="btn btn-secondary ng-scope {% if instance.custom_classes %}{{ instance.custom_classes}}{% endif %}">{{ instance.label }}</button>
+    </div>
+</div>

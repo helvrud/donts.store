@@ -1,0 +1,29 @@
+
+{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail aldryn_people_tags%}
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="product{{ product.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  {% include "shop/catalog/product-figure.html" %}
+                  {# include "aldryn_people/includes/person.html" with person=person detail_view=True carousel_view=False #}      
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+

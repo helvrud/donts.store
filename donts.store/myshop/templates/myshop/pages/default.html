@@ -1,0 +1,95 @@
+{% extends "myshop/pages/base.html" %}
+{% load static cms_tags i18n sekizai_tags sass_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock %}
+
+{% block head %}
+	{{ block.super }}
+	{% addtoblock "css" %}<link href="{% sass_src 'myshop/css/default.scss' %}" rel="stylesheet" type="text/css" />{% endaddtoblock %}
+{% endblock head %}
+
+{% block header %}
+	{% include "myshop/pages/navbar.html" with navbar_classes="navbar-default navbar-fixed-top" %}
+{% endblock header %}
+
+
+{% block breadcrumb %}{% placeholder "Breadcrumb" or %}
+	{% include "shop/breadcrumb/default.html" %}
+{% endplaceholder %}{% endblock breadcrumb %}
+<div id="content">
+{% block main-content %}{% placeholder "Main Content" inherit or %}
+<div class="container">
+	<div class="row shop-starter-template">
+		<div class="col-xs-12">
+			<h1>Default Template</h1>
+			<p class="lead">Use this placeholder as a quick way to start editing a new CMS page.<br/>
+			All you have to do is to append <code>?edit</code> to the URL and switch to “Structure” mode.</p>
+		</div>
+	</div>
+</div>
+{% endplaceholder %}{% endblock main-content %}
+</div>
+{% block footer %}
+      <footer class="footer" style="background-image: url('{% static 'img/fashion/backgrounds/bg-footer.jpg' %}')">
+        
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4 footer-contact-details">
+              <h4>
+                <i class="fa fa-phone"></i>
+                Call</h4>
+              <p>(+420) 774 268 913</p>
+            </div>
+            <div class="col-md-4 footer-contact-details">
+              <h4>
+                <i class="fa fa-map-marker"></i>
+                Visit</h4>
+              <p>Praha - 2 Vyšehrad 
+              <br>Vratislavova 18/34 
+                <br>"Kafesha"</p>
+            </div>
+            <div class="col-md-4 footer-contact-details">
+              <h4>
+                <i class="fa fa-envelope"></i>
+                Email</h4>
+              <p>
+                <a href="mailto:mail@example.com">sales@donts.store</a>
+              </p>
+            </div>
+          </div>
+          <div class="row footer-social">
+            <div class="col-lg-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fa fa-facebook fa-fw fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/donts.store/">
+                    <i class="fa fa-instagram fa-fw fa-2x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://vk.com/donts.store">
+                    <i class="fa fa-vk fa-fw fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="copyright">&copy; 2018 Helge Rugorum</p>
+        </div>
+      </footer>
+    
+    {% comment %}
+        {% static_placeholder "Static Footer" or %}
+            <div class="container">
+                <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        {% endstatic_placeholder %}
+    {% endcomment %}
+{% endblock footer %}
+
+
+

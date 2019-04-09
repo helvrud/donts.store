@@ -1,0 +1,53 @@
+{# This template is shared between Django and AngularJS #}
+{% load i18n thumbnail djng_tags %}
+
+
+
+{% angularjs ng %}
+  <div class="item">
+
+        <figure>
+                <a href="{{ product.product_url }}">
+                        <h4>{{ product.product_name }}</h4>
+                        <div{% if ng %} ng-bind-html="product.media"{% endif %}>{{ product.media }}</div>
+                </a>
+                <figcaption>
+                        <strong>{% trans "Price" %}: {{ product.price }}</strong>
+                        {% if ng %}<ng-bind-html ng-bind-html="product.caption"></ng-bind-html>{% else %}{{ product.caption|safe }}{% endif %}
+                </figcaption>
+        </figure>
+  </div>
+{% endangularjs %}
+
+
+
+
+{% comment %}
+{# This is original item from the vitality theme #}
+  <div class="item">
+    <div class="overlay"></div>
+    <img class="img-fluid" src="{% static 'img/fashion/team/1.jpg' %}" alt="">
+    <div class="team-caption">
+      <h3>Patricia West</h3>
+      <hr class="colored">
+      <em>Owner</em>
+      <ul class="list-inline list-team-social">
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-facebook fa-fw"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-linkedin fa-fw"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            <i class="fa fa-envelope-o fa-fw"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endcomment %}

@@ -1,0 +1,83 @@
+./myshop/search_indexes.py:16:    from myshop.models import SmartCard, [7mSmartPhone[27mModel, ScooterModel, Commodity
+./myshop/search_indexes.py:46:    class [7mSmartPhone[27mIndex(ProductIndex, indexes.Indexable):
+./myshop/search_indexes.py:48:            return [7mSmartPhone[27mModel
+./myshop/search_indexes.py:49:    myshop_search_index_classes.append([7mSmartPhone[27mIndex)
+Двоичный файл ./myshop/__pycache__/search_indexes.cpython-35.pyc совпадает
+./myshop/migrations/polymorphic/0001_initial.py:227:            name='[7mSmartPhone[27mVariant',
+./myshop/migrations/polymorphic/0001_initial.py:275:            name='[7mSmartPhone[27mModel',
+./myshop/migrations/polymorphic/0001_initial.py:369:            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='variants', to='myshop.[7mSmartPhone[27mModel', verbose_name='[7mSmartphone[27m Model'),
+./myshop/migrations/i18n_polymorphic/0001_initial.py:250:            name='[7mSmartPhone[27mModelTranslation',
+./myshop/migrations/i18n_polymorphic/0001_initial.py:265:            name='[7mSmartPhone[27mVariant',
+./myshop/migrations/i18n_polymorphic/0001_initial.py:312:            name='[7mSmartPhone[27mModel',
+./myshop/migrations/i18n_polymorphic/0001_initial.py:410:            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='variants', to='myshop.[7mSmartPhone[27mModel', verbose_name='[7mSmartphone[27m Model'),
+./myshop/migrations/i18n_polymorphic/0001_initial.py:415:            field=models.ForeignKey(editable=False, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='multilingual', to='myshop.[7mSmartPhone[27mModel'),
+Двоичный файл ./myshop/migrations/i18n_polymorphic/__pycache__/0001_initial.cpython-35.pyc совпадает
+./myshop/admin/i18n_polymorphic.py:19:from myshop.models import Product, Commodity, SmartCard, [7mSmartPhone[27mVariant, [7mSmartPhone[27mModel
+./myshop/admin/i18n_polymorphic.py:114:class [7mSmartPhone[27mInline(admin.TabularInline):
+./myshop/admin/i18n_polymorphic.py:115:    model = [7mSmartPhone[27mVariant
+./myshop/admin/i18n_polymorphic.py:119:@admin.register([7mSmartPhone[27mModel)
+./myshop/admin/i18n_polymorphic.py:120:class [7mSmartPhone[27mAdmin(InvalidateProductCacheMixin, SortableAdminMixin, TranslatableAdmin, FrontendEditableAdminMixin,
+./myshop/admin/i18n_polymorphic.py:137:    inlines = [ProductImageInline, [7mSmartPhone[27mInline]
+./myshop/admin/i18n_polymorphic.py:145:        super([7mSmartPhone[27mAdmin, self).save_model(request, obj, form, change)
+./myshop/admin/i18n_polymorphic.py:200:    child_models = [ScooterModel, KhimageModel, [7mSmartPhone[27mModel, SmartCard, Commodity]
+./myshop/admin/polymorphic_.py:18:from myshop.models import Product, Commodity, SmartCard, [7mSmartPhone[27mVariant, [7mSmartPhone[27mModel
+./myshop/admin/polymorphic_.py:48:class [7mSmartPhone[27mInline(admin.TabularInline):
+./myshop/admin/polymorphic_.py:49:    model = [7mSmartPhone[27mVariant
+./myshop/admin/polymorphic_.py:53:@admin.register([7mSmartPhone[27mModel)
+./myshop/admin/polymorphic_.py:54:class [7mSmartPhone[27mAdmin(InvalidateProductCacheMixin, SortableAdminMixin, FrontendEditableAdminMixin, CMSPageAsCategoryMixin,
+./myshop/admin/polymorphic_.py:61:    inlines = [ProductImageInline, [7mSmartPhone[27mInline]
+./myshop/admin/polymorphic_.py:69:        super([7mSmartPhone[27mAdmin, self).save_model(request, obj, form, change)
+./myshop/admin/polymorphic_.py:80:    child_models = [[7mSmartPhone[27mModel, SmartCard, Commodity]
+Двоичный файл ./myshop/admin/__pycache__/i18n_polymorphic.cpython-35.pyc совпадает
+./myshop/serializers/__init__.py:46:    from .polymorphic import (SmartCardSerializer, [7mSmartPhone[27mSerializer, Add[7mSmartPhone[27mToCartSerializer, ScooterSerializer, AddScooterToCartSerializer)
+./myshop/serializers/__init__.py:48:    __all__.extend(['SmartCardSerializer', '[7mSmartPhone[27mSerializer', 'Add[7mSmartPhone[27mToCartSerializer', 'ScooterSerializer', 'AddScooterToCartSerializer'])
+./myshop/serializers/polymorphic.py:9:from myshop.models import SmartCard, [7mSmartPhone[27mModel, ScooterModel
+./myshop/serializers/polymorphic.py:19:class [7mSmartPhone[27mSerializer(ProductSerializer):
+./myshop/serializers/polymorphic.py:21:        model = [7mSmartPhone[27mModel
+./myshop/serializers/polymorphic.py:30:class Add[7mSmartPhone[27mToCartSerializer(AddToCartSerializer):
+./myshop/serializers/polymorphic.py:32:    Modified AddToCartSerializer which handles [7mSmartPhone[27ms
+Двоичный файл ./myshop/serializers/__pycache__/__init__.cpython-35.pyc совпадает
+Двоичный файл ./myshop/serializers/__pycache__/polymorphic.cpython-35.pyc совпадает
+./myshop/urls/polymorphic_products.py:15:from myshop.serializers import (AddScooterToCartSerializer, Add[7mSmartPhone[27mToCartSerializer, CatalogSearchSerializer)
+./myshop/urls/polymorphic_products.py:26:        serializer_class=Add[7mSmartPhone[27mToCartSerializer,
+Двоичный файл ./myshop/urls/__pycache__/polymorphic_products.cpython-35.pyc совпадает
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:26:class [7mSmartPhone[27mModel(Product):
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:28:    A generic smart phone model, which must be concretized by a model `[7mSmartPhone[27m` - see below.
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:149:        except [7mSmartPhone[27mVariant.DoesNotExist as e:
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:150:            raise [7mSmartPhone[27mModel.DoesNotExist(e)
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:153:class [7mSmartPhone[27mVariant(models.Model):
+./myshop/models/i18n_polymorphic/[7msmartphone[27m.py:155:        [7mSmartPhone[27mModel,
+./myshop/models/i18n_polymorphic/khimage.py:32:    A generic smart phone model, which must be concretized by a model `[7mSmartPhone[27m` - see below.
+./myshop/models/i18n_polymorphic/khimage.py:157:        except [7mSmartPhone[27mVariant.DoesNotExist as e:
+./myshop/models/i18n_polymorphic/khimage.py:158:            raise [7mSmartPhone[27mModel.DoesNotExist(e)
+Двоичный файл ./myshop/models/i18n_polymorphic/__pycache__/[7msmartphone[27m.cpython-35.pyc совпадает
+Двоичный файл ./myshop/models/i18n_polymorphic/__pycache__/khimage.cpython-35.pyc совпадает
+Двоичный файл ./myshop/models/i18n_polymorphic/__pycache__/scooter.cpython-35.pyc совпадает
+./myshop/models/i18n_polymorphic/scooter.py:20:    A generic smart phone model, which must be concretized by a model `[7mSmartPhone[27m` - see below.
+Двоичный файл ./myshop/models/__pycache__/__init__.cpython-35.pyc совпадает
+./myshop/models/polymorphic_/[7msmartphone[27m.py:28:class [7mSmartPhone[27mModel(Product):
+./myshop/models/polymorphic_/[7msmartphone[27m.py:30:    A generic smart phone model, which must be concretized by a model `[7mSmartPhone[27m` - see below.
+./myshop/models/polymorphic_/[7msmartphone[27m.py:149:        except [7mSmartPhone[27mVariant.DoesNotExist as e:
+./myshop/models/polymorphic_/[7msmartphone[27m.py:150:            raise [7mSmartPhone[27mModel.DoesNotExist(e)
+./myshop/models/polymorphic_/[7msmartphone[27m.py:153:class [7mSmartPhone[27mVariant(models.Model):
+./myshop/models/polymorphic_/[7msmartphone[27m.py:155:        [7mSmartPhone[27mModel,
+./myshop/models/__init__.py:13:           'Commodity', 'SmartCard', '[7mSmartPhone[27mModel', '[7mSmartPhone[27mVariant', 'ScooterModel', 'ScooterVariant', 'Delivery', 'DeliveryItem']
+./myshop/models/__init__.py:33:    from .polymorphic_.[7msmartphone[27m import [7mSmartPhone[27mModel, [7mSmartPhone[27mVariant
+./myshop/models/__init__.py:40:    from .i18n_polymorphic.[7msmartphone[27m import [7mSmartPhone[27mModel, [7mSmartPhone[27mVariant
+./myshop/models/__init__.py:46:    __all__.extend(['SmartCard', '[7mSmartPhone[27mModel', 'ScooterModel', 'KhimageModel', 'KhimageVariant', '[7mSmartPhone[27mVariant', 'ScooterVariant', 'Delivery', 'DeliveryItem'])
+./scooter:1:./myshop/search_indexes.py:16:    from myshop.models import SmartCard, [7mSmartPhone[27mModel, [7mScooter[27mModel, Commodity
+./scooter:13:./myshop/admin/i18n_polymorphic.py:200:    child_models = [[7mScooter[27mModel, KhimageModel, [7mSmartPhone[27mModel, SmartCard, Commodity]
+./scooter:15:./myshop/serializers/__init__.py:46:    from .polymorphic import (SmartCardSerializer, [7mSmartPhone[27mSerializer, Add[7mSmartPhone[27mToCartSerializer, [7mScooter[27mSerializer, Add[7mScooter[27mToCartSerializer)
+./scooter:16:./myshop/serializers/__init__.py:48:    __all__.extend(['SmartCardSerializer', '[7mSmartPhone[27mSerializer', 'Add[7mSmartPhone[27mToCartSerializer', '[7mScooter[27mSerializer', 'Add[7mScooter[27mToCartSerializer'])
+./scooter:17:./myshop/serializers/polymorphic.py:9:from myshop.models import SmartCard, [7mSmartPhone[27mModel, [7mScooter[27mModel
+./scooter:23:./myshop/urls/polymorphic_products.py:15:from myshop.serializers import (Add[7mScooter[27mToCartSerializer, Add[7mSmartPhone[27mToCartSerializer, CatalogSearchSerializer)
+./scooter:40:./myshop/models/__init__.py:13:           'Commodity', 'SmartCard', '[7mSmartPhone[27mModel', '[7mSmartPhone[27mVariant', '[7mScooter[27mModel', '[7mScooter[27mVariant', 'Delivery', 'DeliveryItem']
+./scooter:42:./myshop/models/__init__.py:46:    __all__.extend(['SmartCard', '[7mSmartPhone[27mModel', '[7mScooter[27mModel', 'KhimageModel', 'KhimageVariant', '[7mSmartPhone[27mVariant', '[7mScooter[27mVariant', 'Delivery', 'DeliveryItem'])
+./scooter:43:./smart:1:./myshop/search_indexes.py:16:    from myshop.models import SmartCard, [7m[7mSmartPhone[27m[27mModel, [7mScooter[27mModel, Commodity
+./scooter:44:./smart:22:./myshop/admin/i18n_polymorphic.py:200:    child_models = [[7mScooter[27mModel, KhimageModel, [7m[7mSmartPhone[27m[27mModel, SmartCard, Commodity]
+./scooter:45:./smart:32:./myshop/serializers/__init__.py:46:    from .polymorphic import (SmartCardSerializer, [7m[7mSmartPhone[27m[27mSerializer, Add[7m[7mSmartPhone[27m[27mToCartSerializer, [7mScooter[27mSerializer, Add[7mScooter[27mToCartSerializer)
+./scooter:46:./smart:33:./myshop/serializers/__init__.py:48:    __all__.extend(['SmartCardSerializer', '[7m[7mSmartPhone[27m[27mSerializer', 'Add[7m[7mSmartPhone[27m[27mToCartSerializer', '[7mScooter[27mSerializer', 'Add[7mScooter[27mToCartSerializer'])
+./scooter:47:./smart:34:./myshop/serializers/polymorphic.py:9:from myshop.models import SmartCard, [7m[7mSmartPhone[27m[27mModel, [7mScooter[27mModel
+./scooter:48:./smart:41:./myshop/urls/polymorphic_products.py:15:from myshop.serializers import (Add[7mScooter[27mToCartSerializer, Add[7m[7mSmartPhone[27m[27mToCartSerializer, CatalogSearchSerializer)
+./scooter:49:./smart:64:./myshop/models/__init__.py:13:           'Commodity', 'SmartCard', '[7m[7mSmartPhone[27m[27mModel', '[7m[7mSmartPhone[27m[27mVariant', '[7mScooter[27mModel', '[7mScooter[27mVariant', 'Delivery', 'DeliveryItem']
+./scooter:50:./smart:67:./myshop/models/__init__.py:46:    __all__.extend(['SmartCard', '[7m[7mSmartPhone[27m[27mModel', '[7mScooter[27mModel', 'KhimageModel', 'KhimageVariant', '[7m[7mSmartPhone[27m[27mVariant', '[7mScooter[27mVariant', 'Delivery', 'DeliveryItem'])

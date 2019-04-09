@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="114.90809mm"
+   height="22.402199mm"
+   viewBox="0 0 114.90809 22.402199"
+   version="1.1"
+   id="svg2689"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="donts.svg">
+  <defs
+     id="defs2683" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0882637"
+     inkscape:cx="290.02253"
+     inkscape:cy="-228.34619"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata2686">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(20.49915,-66.014539)">
+    <rect
+       ry="1.2242362"
+       rx="1.478379"
+       y="66.033539"
+       x="-20.48015"
+       height="22.364199"
+       width="114.87009"
+       id="rect2667"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;vector-effect:none;fill:#000000;fill-opacity:0.98406372;fill-rule:evenodd;stroke:#000000;stroke-width:0.038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.92430282;marker:none;enable-background:accumulate" />
+    <text
+       id="text2673"
+       y="82.552559"
+       x="-16.033297"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:16.93333244px;line-height:125%;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#fefefe;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         y="82.552559"
+         x="-16.033297"
+         id="tspan2669"
+         sodipodi:role="line"
+         style="stroke-width:0.26458332px">dos &amp; dont's</tspan><tspan
+         id="tspan2671"
+         y="103.71922"
+         x="-16.033297"
+         sodipodi:role="line"
+         style="stroke-width:0.26458332px" /></text>
+  </g>
+</svg>
