@@ -20,7 +20,7 @@ cssselect==1.0.3
 cssutils==1.0.2
 decorator==4.3.0
 defusedxml==0.5.0
-Django==1.11.15
+Django==2.2.24
 django-absolute==0.3
 django-admin-sortable==2.1.9
 django-admin-sortable2==0.6.19
